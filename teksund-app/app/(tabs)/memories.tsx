@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, ScrollView, Image, StyleSheet } from 'react-native';
+import { ScrollView, Image } from 'react-native';
+import styles from '../Styles';
 
 const randomImages = [
   'https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/bltce80954b8a793ce1/66707e9a8a3929cbd9124f15/surprise-party-hero.jpg',
@@ -14,24 +15,10 @@ const randomImages = [
 
 export default function Memories() {
   return (
-    <ScrollView contentContainerStyle={styles.container}>
+    <ScrollView contentContainerStyle={styles.memoriesContainer}>
         {randomImages.map((uri, index) => (
-            <Image key={index} source={{ uri }} style={styles.image} />
+            <Image key={index} source={{ uri }} style={styles.memoryImage} />
         ))}
     </ScrollView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    padding: 10,
-  },
-  image: {
-    width: '35%',
-    aspectRatio: 1,
-    margin: 10,
-  },
-});

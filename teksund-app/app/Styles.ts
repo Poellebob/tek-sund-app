@@ -114,6 +114,25 @@ const styles = StyleSheet.create({
         textDecorationLine: 'underline',
         color: '#00b',
     },
+
+    // Memory styles
+    memoriesContainer: {
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        padding: 10,
+    },
+    memoryImage: {
+        width: '35%',
+        aspectRatio: 1,
+        margin: 10,
+        borderRadius: 12,  // Adding rounded corners
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 5,
+    },
 });
 
 export default styles;

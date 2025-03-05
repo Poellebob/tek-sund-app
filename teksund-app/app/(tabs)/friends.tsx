@@ -14,7 +14,7 @@ export default function Friend() {
   const [friends, setFriends] = useState<Friend[]>([
     { id: '1', name: 'Alex Smith', status: 'Online', avatar: 'https://via.placeholder.com/50' },
     { id: '2', name: 'Jamie Johnson', status: 'Offline', avatar: 'https://via.placeholder.com/50' },
-    { id: '3', name: 'Taylor Brown', status: 'Working out', avatar: 'https://via.placeholder.com/50' },
+    { id: '3', name: 'Taylor Brown', status: 'Offline', avatar: 'https://via.placeholder.com/50' },
     { id: '4', name: 'Casey Davis', status: 'Online', avatar: 'https://via.placeholder.com/50' },
   ]);
 
