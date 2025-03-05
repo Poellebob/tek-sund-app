@@ -1,6 +1,7 @@
-import { Text, View, StyleSheet, FlatList, TouchableOpacity, Image } from "react-native";
+import { Text, View, FlatList, TouchableOpacity, Image } from "react-native";
 import { Link } from "expo-router";
 import { useState } from "react";
+import styles from "../Styles";
 
 interface Friend {
   id: string;
@@ -52,80 +53,3 @@ export default function Friend() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,  
-        backgroundColor: '#f5f5f5',
-        padding: 16,
-    },
-    header: {
-        fontSize: 24,
-        fontWeight: 'bold',
-        marginTop: 40,
-        marginBottom: 16,
-    },
-    text: {
-        color: '#000'
-    },
-    button: {
-        fontSize: 20,
-        textDecorationLine: 'underline',
-        color: '#00b',
-    },
-    list: {
-        width: '100%',
-    },
-    friendItem: {
-        flexDirection: 'row',
-        padding: 16,
-        backgroundColor: '#fff',
-        borderRadius: 10,
-        marginBottom: 8,
-        alignItems: 'center',
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 1 },
-        shadowOpacity: 0.1,
-        shadowRadius: 2,
-        elevation: 2,
-    },
-    avatar: {
-        width: 50,
-        height: 50,
-        borderRadius: 25,
-    },
-    friendInfo: {
-        flex: 1,
-        marginLeft: 12,
-    },
-    friendName: {
-        fontSize: 16,
-        fontWeight: '500',
-    },
-    statusText: {
-        fontSize: 14,
-        marginTop: 4,
-    },
-    actionButton: {
-        backgroundColor: '#2196F3',
-        paddingHorizontal: 12,
-        paddingVertical: 6,
-        borderRadius: 16,
-    },
-    actionButtonText: {
-        color: '#fff',
-        fontWeight: '500',
-    },
-    addFriendButton: {
-        backgroundColor: '#4CAF50',
-        padding: 12,
-        borderRadius: 8,
-        alignItems: 'center',
-        marginBottom: 16,
-    },
-    addFriendText: {
-        color: '#fff',
-        fontWeight: 'bold',
-        fontSize: 16,
-    },
-});

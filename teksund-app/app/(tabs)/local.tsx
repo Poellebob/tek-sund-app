@@ -1,6 +1,6 @@
 import { Text, View, FlatList, TouchableOpacity, Image } from "react-native";
 import { useState } from "react";
-import styles from "./localStyles";
+import styles from "../Styles";
 
 interface Activity {
   id: string;
