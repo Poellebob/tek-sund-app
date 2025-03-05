@@ -15,6 +15,7 @@
       "autoIncrement": true
     },
     "pre_alpha": {
+      "developmentClient": true,
       "distribution": "internal"
     },
     "alpha": {
