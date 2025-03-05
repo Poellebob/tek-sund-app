@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "scr",
-    "slug": "scr",
+    "name": "tek_sund_app",
+    "slug": "tek_sund_app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
