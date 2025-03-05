@@ -13,6 +13,18 @@
     },
     "production": {
       "autoIncrement": true
+    },
+    "pre_alpha": {
+      "distribution": "internal"
+    },
+    "alpha": {
+      "distribution": "internal"
+    },
+    "beta": {
+      "distribution": "internal"
+    },
+    "releaseCandidate": {
+      "distribution": "internal"
     }
   },
   "submit": {
